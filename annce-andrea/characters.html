@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Characters</title>
+
+<!-- css-->
+	<link rel="stylesheet" href="styles.css" type="text/css">
+<!-- fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Play" rel="stylesheet">
+
+	<style>
+/* padding for style and size */
+		#characters-and-blurbs{
+			padding: 100px;
+		}
+/*Single line heading override for size and format*/
+		.main-text{
+			font-size:6em;
+			margin-left: -25px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+
+/*settings for floated pictures*/
+		.portrait {
+			margin: 30px 100px 30px 100px;
+			background-color: #a2a3a5;
+			height: 200px;
+			width: 200px;
+			float: left;
+			border: 10px groove #d8d9d9;
+			overflow-x: hidden;
+			/*text-indent: -9999px;*/
+		}
+
+/*pictures floated to the right*/
+		.right-pictures{
+			margin: 30px 100px 30px 100px;
+			background-color: #a2a3a5;
+			height: 200px;
+			width: 200px;
+			float: right;
+			border: 10px groove #d8d9d9;
+			
+		}
+/*text formatting*/
+		.text {
+			padding: 30px 100px 30px 100px;
+		}
+/*text formatting for right floated picture text*/
+		.right-text {
+			text-align: right;
+			padding: 30px 100px 30px 100px;
+		}
+
+/*main heading size change for <900px*/
+	@media(max-width: 900px){
+		
+		.main-text {
+			margin: 5% 0 0 0;
+			text-shadow: 0px 0px 10px #bbbfbf;
+			z-index: 1;
+			font-size: 3em;
+		}	
+
+	}
+
+
+	</style>
+
+</head>
+<body>
+
+<!-- header-->
+	<header>
+		<h1 class="main-text">Characters</h1><img id="insignia" src="images/insignia.jpg" alt = "Insignia">
+		<div id="navigation">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<br>
+				<br>
+				<a href="characters.html"><li>Characters</li></a>
+				<br>
+				<br>
+				<a href="cast-crew.html"><li>Cast &amp; Crew</li></a>
+				<br>
+				<br>
+				<a href="director.html"><li>Meet the Director</li></a>
+			</ul>
+		</div>
+
+<!-- social media-->
+			<table>
+			<tr>
+
+				<td><a href="https://www.facebook.com/shadowstarreturns/"><img src="images/facebook.png" alt="Facebook"></a></td>
+				<td><a href="https://www.instagram.com/shadowstarreturns/"><img src="images/instagram_PNG9.png" alt="Instagram"></a></td>
+			</tr>
+		</table>
+	</header>
+
+<!-- background-->
+<div id="content">
+	<div id="overlay"></div>
+</div>
+
+
+<!-- character portraits and text-->
+	<div class="characters-and-blurbs">
+
+
+<!-- Main Character-->
+		<div class="portrait" id="main-character-picture"><img src="images/keiran-portrait.png"></div>
+		
+		 <div class="text"><p><span>Keiran:</span> Black teen from the neighborhood,  fondly remembers the days when the hero Shadowstar was there to protect him and people like him. Left adrift in Shadowstar's absence, but remaining resilient and hopeful about the potential of a better future ahead, Keiran has resolved to leave the neighborhood with his best friend Tyriq and never look back. But deep down, more than anything, he wishes that one day, Shadowstar might come back.
+</p></div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+<!-- Sad Character-->
+		<div class="right-pictures" class="portrait"  id="sad-character-picture"><img src="images/Tyriq-portrait.png"></div>
+		
+		 <div class="right-text"><p><span>Tyriq:</span> Young, lonely, and hardened by the world, Tyriq is an orphan who has bounced from foster home to foster home. When his friend Keiran discovers that he is being abused in his current home, Tyriq agrees to join Keiran on his quest out of the neighborhood. Tired of being perceived as weak and helpless, Tyriq yearns to prove that he can be his own man.
+</p></div>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+
+<!-- Villain Character-->
+		<div class="portrait" id="villain-character-picture"><img src="images/villain-portrait.jpg"></div>
+		
+		 <div class="text"><p><span>Jamel:</span> A small-time gang leader from the streets of the neighborhood, Jamel and Keiran used to be close before Keiran disappeared on him years ago after a fateful run-in with Shadowstar. His reunion with Keiran goes sour quickly and he turns into a very real threat. Hurt by abandonment from both his best friend and his hero, his pain becomes aggression that he exerts on those who cross him.</p></div>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+
+<!-- Secondary Characters-->
+		<div class="right-pictures" class="portrait"  id="secondary-character-picture"></div>
+	
+		 <div class="right-text"><p><span>Kayesean:</span>A member of Jamel's gang, Kayesean hangs on Jamel's every word. He remembers the days when Shadowstar used to patrol the streets, and yearns for the guidance of a strong leader. He is inseparable friends with Malik.</p></div>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+
+<!-- Another Character-->
+		 <div class="portrait" id="another-character-picture"></div>
+		
+		 <div class="text"><p><span>Malik:</span>A member of Jamel's gang, Malik resents Jamel for his violent nature and tendency to disrespect his own soldiers. He sticks around out of love for his friend Kayesean, but his patience wears thin.</p></div>
+
+	</div>
+
+	<!-- get nav bar to toggle -->
+<!-- 	<script>
+
+		$("#navigation").hover(function(){
+			$("#navigation").animate({width."toggle"});
+
+			}
+		});	
+
+	</script> -->
+</body>
+</html>

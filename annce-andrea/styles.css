@@ -1,0 +1,194 @@
+/*Default header*/
+header {
+		display:flex;
+		justify-content: space-between;
+		padding:0px 50px 0 50px;
+		max-height: 250px;
+		background-color: black;
+		background: linear-gradient(right top, #2c2f35 1%, #000000);
+		background: -webkit-linear-gradient(right top, #2c2f35 1%, #000000);
+		background: -moz-linear-gradient(right top, #2c2f35 1%, #000000);
+		background: -o-linear-gradient(right top,#2c2f35 1%, #000000);
+		border-bottom: 15px groove #d8d9d9;	
+}
+/*Default h1*/
+	h1{
+		font-size: 3em;
+		font-family: 'Fredericka the Great', cursive;
+		color: white;
+		text-shadow: 0px 0px 10px black;
+
+	}
+/*Default h1 in header*/
+	.main-text{
+		margin: -2% 0 0 0;
+		text-shadow: 0px 0px 10px #bbbfbf;
+		z-index: 1;
+			
+	}
+/*links*/
+	a{
+		text-decoration: none;
+		color: #eff1f4
+
+	}
+/*body*/
+	body{
+		background-color:#000000;
+	}
+/*insignia placement & size*/
+	#insignia {
+		position: absolute;
+		margin: 0 40% 0 40%;
+		border-radius: 200px;
+		border: 5px solid #eff1f4;
+		max-height: 200px;
+		max-width: 200px;
+		-webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 1);
+		box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 1);
+		-moz-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 1);
+		
+	}
+
+/*social media table*/
+	table{
+		position: relative;
+		bottom: 0;
+		padding-top: 10%;
+		padding-right: 10%;
+		margin-bottom: 0;
+		z-index: 0;
+	}
+/*font settings*/
+	p {
+		font: 20px/22px bold Play sans-serif;
+		color: white;
+
+		}
+
+/*Big text for names*/
+	span {
+		font: 26px/28px bold;
+	}
+/*nav bar display*/
+	#navigation{
+		z-index: 1;
+		position: fixed;
+		display: flex;
+		height: 100px;
+		border-radius: 30px;
+		background-color: black;
+		background: linear-gradient(right, rgba(0,0,0,0.0) 5%, rgba(0,0,0,0.5));
+		background: -webkit-linear-gradient(right,rgba(0,0,0,0.0) 5%, rgba(0,0,0,0.5));
+		background: -moz-linear-gradient(right, rgba(0,0,0,0.0) 5%, rgba(0,0,0,0.5));
+	}
+/*nav format*/
+		ul {
+			position: relative;
+			right: 10px;
+			position: fixed;
+			list-style: none;
+			text-align: left;
+		}
+/*nav style*/
+		ul li {
+			line-height: 10px;
+			text-shadow: 0 0 8px #ffffff;
+			font-size: 25px;
+			color: #bbbfbf;
+			margin: 0;
+		}
+/*nav hover*/
+		ul li:hover {
+			color: white;
+		}
+
+/*background image*/
+		#content{
+			height:100%;
+			width: 100%;
+			position: fixed;
+			background-image: url(images/car-drawing-background.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+/*background image gradient into black*/
+		#overlay {
+			height: inherit;
+			width: inherit;
+			background-color: black;
+			background: linear-gradient(bottom, rgba(0,0,0,0.0) 75%, rgba(0,0,0,1.0));
+			background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.0)75%, rgba(0,0,0,1.0));
+
+			background: -moz-linear-gradient(bottom, rgba(0,0,0,0.0)75%, rgba(0,0,0,1.0));
+		}
+/*Change header upon height < 900px */
+	@media(max-height: 900px){
+	  #main-text{
+	  	font-size: 1%;
+	  }
+
+	  #insignia {
+	  	max-height: 150px;
+	  }
+
+	}
+/*Change header upon width > 1200px */
+	@media(min-width: 1200px){
+	  header{
+	  	justify-content: space-between;
+	  }
+
+	  #insignia{
+	  	align-self: center;
+	  	max-height: 250px;
+	  	max-width: 250px;
+	  }
+
+	  .main-text{
+		font-size: 5em;
+	  }
+	}
+/*Change header upon width < 900px */
+	@media(max-width: 900px){
+ 
+		header{
+			border-bottom: 10px groove #d8d9d9;
+			padding-left: 10px;
+		}
+		.main-text{
+			margin: 0;
+			font-size: 4em;
+		}
+
+		#insignia {
+			margin-left: 50px;
+		}
+
+		p {
+			text-align: justify;
+		}
+
+	}
+/*Change header & index main photo upon width < 500px */
+	@media(max-width: 500px){
+		h1{
+			
+			font-size: 2.5em;
+		}
+		#insignia{
+			margin: -10% 15% 0 0;
+			width: auto;
+		}
+
+		.main-still{
+			
+			height:400px;
+			width:100%;
+			background-position:700px 0;
+			
+
+		}
+	}
